@@ -16,10 +16,11 @@ public class Permutation {
     public static void main(String[] args) {
         HashSet set = new HashSet<String>();
         Permutation permu = new Permutation();
-        String str = "srishti";
+        String str = "abc";
         int l = 0, r = str.length() - 1;
         permu.perm(str, l, r, set);
-        System.out.println(set.size());
+        
+        set.forEach((per)-> System.out.println(per));
     }
 
     public void perm(String str, int left, int right, HashSet<String> set) {
@@ -41,22 +42,6 @@ public class Permutation {
         return String.valueOf(arr);
     }
 }
-
-
-//abc 
-// l = 0  r = 2 set = [cba, cab, bac, bca]
-
-
-//perm l = 0, r = 2
-// i = 1
-// b a c
-
-//perm l = 1, r = 2
-// i = 2
-// b c a
-
-//perm l = 2, r = 2
-
 
 
 
