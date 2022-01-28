@@ -1,3 +1,4 @@
+import java.util.*;
 /*
 This Question is from LeetCode 46
 
@@ -25,13 +26,6 @@ public void swap(int[] arr, int i, int j){
     int temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
-}
-
-public void printArray(int[] arr){
-    for(int a: arr)
-        System.out.print(a+" ");
-    
-    System.out.println();
 }
 public void addAnswer(List<List<Integer>> ans, int[] arr){
     List<Integer> ans1 = new ArrayList<>();
