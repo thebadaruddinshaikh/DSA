@@ -1,5 +1,5 @@
-
-public class QuickSort {
+package com.dsa.specilisation.algorithms.c1.Week3;
+public class  QuickSort {
   public static void main(String[] args) {
     int[] arr = { 6,9,2, 8, 5, 11, 7,3};
     QuickSort qs = new QuickSort();
@@ -12,7 +12,7 @@ public class QuickSort {
 
   public void partition(int[] arr, int pivot) {
     int i = 1;
-    
+
     for (int j = i; j < arr.length; j++) {
       if (arr[j] < arr[pivot]) {
         int temp = arr[i];
